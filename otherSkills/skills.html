@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Skills</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Courgette&family=Fasthand&family=Merienda:wght@400;700&family=Pacifico&family=Patrick+Hand&family=Poppins:wght@400;500;600&family=Sacramento&family=Spline+Sans+Mono&family=Sriracha&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <style>
+         :root {
+            --color-red: #d75959;
+            --color-yellow: #f5c463;
+            --color-green: #9ccd7e;
+            --color-blue: #5ca7db;
+            --rgb-black: 0, 0, 0;
+        }
+        
+        * {
+            color: white;
+        }
+        
+        body {
+            font-family: 'Spline Sans Mono', monospace;
+            background-color: #23313f;
+            /* background-image: linear-gradient(147deg, #000000 0%, #2c3e50 75%); */
+            /* height: 100%; */
+            color: white;
+        }
+        
+        .wrapper {
+            margin-top: 50px;
+        }
+        
+        .progress-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .progress-list li .line {
+            position: relative;
+        }
+        
+        .progressbar:not(.circle) svg,
+        .progressbar:not(.circle) svg path {
+            border-radius: 20px;
+        }
+        
+        .progressbar svg path:first-child {
+            stroke: rgba(var(--rgb-black), 0.09);
+        }
+        
+        .progressbar.border {
+            border: 1px solid transparent;
+            box-sizing: border-box;
+        }
+        
+        .progressbar.border svg path:first-child {
+            stroke: transparent;
+        }
+        
+        .progressbar.line svg {
+            height: 5px;
+        }
+        
+        .progressbar.line.border svg {
+            height: 4px;
+        }
+        
+        .progressbar.circle {
+            position: relative;
+            margin: 0 auto 30px;
+        }
+        
+        .progressbar.circle {
+            width: 170px;
+            height: 85px;
+        }
+        
+        .progressbar.circle .progressbar-text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            margin: 0;
+            font-size: 40px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: white !important;
+            font-weight: bold;
+        }
+        
+        .progressbar.circle .progressbar-text:after {
+            content: "%";
+            display: block;
+            font-size: 20px;
+            padding-left: 2px;
+        }
+        
+        .progressbar.red svg path:last-child {
+            stroke: var(--color-red)
+        }
+        
+        .progressbar.yellow svg path:last-child {
+            stroke: var(--color-yellow)
+        }
+        
+        .progressbar.green svg path:last-child {
+            stroke: var(--color-green)
+        }
+        
+        .progressbar.blue svg path:last-child {
+            stroke: var(--color-blue)
+        }
+        
+        h5 {
+            background: transparent;
+            padding: 10px;
+            width: 75%;
+            margin: 0 auto;
+            border-radius: 50px;
+            border: 2px solid #ebebeb;
+            font-size: 17px;
+            color: white;
+        }
+        
+        h2 {
+            text-decoration: underline;
+        }
+        
+        p {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper image-wrapper">
+        <div class="container inner">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <h2 class="title-color text-center">My Other Skills</h2>
+                    <br><br><br>
+
+                    <div class="row text-center">
+                        <div class="col-lg-3">
+                            <div class="progressbar circle blue" data-value="90"></div>
+                            <h5>Git/GitHub</h5>
+                            <p>I am Using Git/GitHub for OpenSource Contribution.</p>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="progressbar circle green" data-value="70"></div>
+                            <h5>Computer Networking</h5>
+                            <p>I started my learning in Computer field from learning computer networking.</p>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="progressbar circle red" data-value="80"></div>
+                            <h5>My-Sql</h5>
+                            <p>In My college, I leart about Database Managment System. so from there i learnt about My-Sql.</p>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="progressbar circle red" data-value="55"></div>
+                            <h5>Operating System</h5>
+                            <p>In My college, I leart about Operating System. I am using Ubantu Operating System.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js "></script>
+
+    <script src="web.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js "></script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            'use strict';
+            var $pline = $('.progressbar.line');
+            var $pcircle = $('.progressbar.circle');
+            $pline.each(function(i) {
+                var line = new ProgressBar.Line(this, {
+                    strokeWidth: 6,
+                    trailWidth: 6,
+                    duration: 3000,
+                    easing: 'easeInOut',
+                    text: {
+                        style: {
+                            color: 'inherit',
+                            position: 'absolute',
+                            right: '0',
+                            top: '-30px',
+                            padding: 0,
+                            margin: 0,
+                            transform: null
+                        },
+                        autoStyleContainer: false
+                    },
+                    step: function(state, line, attachment) {
+                        line.setText(Math.round(line.value() * 100) + ' %');
+                    }
+                });
+                var value = ($(this).attr('data-value') / 100);
+                $pline.waypoint(function() {
+                    line.animate(value);
+                }, {
+                    offset: "100% "
+                })
+            });
+            $pcircle.each(function(i) {
+                var circle = new ProgressBar.SemiCircle(this, {
+                    strokeWidth: 5,
+                    trailWidth: 5,
+                    duration: 2000,
+                    easing: 'easeInOut',
+                    step: function(state, circle, attachment) {
+                        circle.setText(Math.round(circle.value() * 100));
+                    }
+                });
+                var value = ($(this).attr('data-value') / 100);
+                $pcircle.waypoint(function() {
+                    circle.animate(value);
+                }, {
+                    offset: "100% "
+                })
+            });
+
+            $('.counter .value').counterUp({
+                delay: 50,
+                time: 1000
+            });
+
+            $(".countdown ").countdown();
+        });
+    </script>
+</body>
+
+</html>
